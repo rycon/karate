@@ -1,0 +1,11 @@
+query MyQuery(
+		$site: ID!
+		$shiftDate: AWSDateTime!
+	)
+	{
+		listShifts(date: $shiftDate, siteId: $site) {
+			id
+			name
+			start
+		}
+	}

@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("78429a61-2c66-4185-bc11-47a390c9f507",{name:"ji9560880"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.REST-poc.reqres</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-10 02:37:00 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Create a new user, update the user, and verify the update - using inline payload</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:49]"><span>[2:49]</span> <span>Create a new user, update the user, and verify the update - using json file</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/REST-poc/reqres.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Do a full end to end run on the endpoint against https://reqres.in/</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Create a new user, update the user, and verify the update - using inline payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url restUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">14:37:00.037 &lt;&lt; lock released, cached callSingle: classpath:supportTests/getCurrentShift/getCurrentVanscoyShift.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.authentication.authAdmin</div>
+      </div>
+      <div class="time-cell passed">609</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url authUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">14:36:57.915 karate.env system property was: stage 
+14:36:57.920 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/authentication/authAdmin.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field client_id = clientId // pulls client_id from the karate-config-{env}.js file</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field grant_type = &#39;refresh_token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field refresh_token = adminRefreshToken // pulls client_id from the karate-config-{env}.js file</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">607</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.12">14:36:57.937 request:
+1 &gt; POST https://minesight-stage.auth.us-east-2.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 1816
+1 &gt; Host: minesight-stage.auth.us-east-2.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 &gt; Accept-Encoding: gzip,deflate
+client_id=6voelf7mtrldfr223gaimufi2d&amp;grant_type=refresh_token&amp;refresh_token=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.CSlMEMBiS5av81BMKbXuG4Q6vh12C2nZ0lu2sa01mRfUGoj3Z-BOG--e67GySlzA3jB8LuTVQynxhjx1XM_g4blK9Viw3ToZCt63k5nolrGht5TRFfYpHAEFY4Hm2mmlRyp5vBssiqz2tL0jOlUigXJaEjJ1zOOlv7_hWwgevfvQPKgcsBOuYsNVZI7qXNJzlzxHdzTq5ucE8ls1WrLwUvk4LOEz73jPsLjZAXBBXQFvrJuraYOzGuKNAdyslABrIeNPOvZ1T1CsAY00-jvwwe2DRQVqqhqVPAmuYwS9EJmrvVNnxRiPyRAfeQN7C5GAYXPs6gjbMNtlU-XfmQbyMQ.27EWVawSams2i2cq.noVAh29evH2gc9dACs6aJBrrx6jm0S1DrXLFXXlJCEyZ_QKz1gd-S7GjMBBfPjwxemJsixJUclfxZtqx3iv9ISdTN3zKNSqlRKjy-4vDY8FGk22Bj4g80xdwYKmpyKOFDU31RC4XP3NrhYvYQaVyOaTUo6wGDOQx5zPP9cFrLeSj7yniv9cvveW4cw8bNiRlU0vj8cD4Bbw9B7rdrrNXKPFAEOdAsEg9JlW0HetQ1PsXoo0ZXmUky5qOMu4GGBdBmW0kV5j2vr5tL-viTztQZ6iWNrQkhykUAYqva9Xj5YhDxqRIc0LNdhN2nKeBotAU8Mml9XExNA9iXxhEAw3gE4NmJdS-qG1nTJKt7BCEkx3FzSMbNmNvPF0zpssaeDeZrL9xEW2gVxEKQL-6z-P1vI5zs91EKILezHe3Nv_AYZtaoXoRSkPGvc9E9CANI97cS_nc5if3l9uityvXI-3b6slt1vYu-49UMR-yk5w5C5_L1JqThhRjAdQDN48KVj8tn5NzvZikQKfQS3lGR71uwg6qrWrzuQNw3ST2CG5ZCwEqWkvw9bn7t6OmEWAT64NnglktVwiH-FkJqndXbgnmleoCvmS0aDTHodRB_KfmyMvNw1485bXQq4pSqlaIJeWuFBAN-Ad9_BG9tt7NLcqKoFq7TItjGCbMTxvreLzHufGCh_-g7mR76jNE3uqPFFgn2PzHyP-rNGjpAs3yXV8VEpLh1d52D1d3pM6KUuVabQaPR9UgUGH2DWzZaz83sBgjp59iliEBMk8loXw_Ihyeh1yV_-ZABTCAoqnK-mhy1kNkBssq-XYvz4DFoRbwhkD9WefTjvJyu6r6WVAbDhBmLmp__zmkpaCLjci2YTjGAzWyeHssW2m24YB2zPq5G4V6_2H0l6s04KCwETgFaKUAel_cHj1hU2uJu9lp2mecKB8E07EMsllARm5BjBogvFMj7TlXOTm2DJ-0VwTLp7g6pHHoZJdvUGa8QlZ-zkqaO34x-8JQ4VhY465N6YRI5D_PBrdnFPKSSDKLo1ouGjTjE8_ed0f7AAEOduiSZWV89MP_xxIjiXqGJVLkUXwenuLYg5x58Ax9U4D43Ma-UvxqCwChPC6O_Wl-pvFgMb-Rw_5BLJ_hDYRLk7sU7Bf7t_8vLlZrMu9Fqi9KiwM86g2ov3tuONoXvKzmAg-F1PfOIDP6U4OjA70f7hiGmkE0RikP5EtxWablPvGZxZS4JP2z-dBUZqfXy1PIPNzVkxsMpJlmAnt-9cMHoQLa3ftjandeQIu3P325zME1WQ.j_u-LDyWKDCl3Q3HQaiqLw
+
+14:36:58.534 response time in milliseconds: 595
+1 &lt; 200
+1 &lt; Date: Thu, 10 Nov 2022 20:36:58 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Server: Server
+1 &lt; Expires: 0
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; x-amz-cognito-request-id: cebc9ab3-c3f7-4d10-8de5-f2bb120055d9
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; Set-Cookie: XSRF-TOKEN=7f6cb943-3779-41d3-bd9b-3b03e7e357ea; Domain=minesight-stage.auth.us-east-2.amazoncognito.com; Secure
+{&quot;id_token&quot;:&quot;eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiN2w1TWRpOF9SbVpNU29jZE1DNnc1USIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjY4MTE2MjE4LCJpYXQiOjE2NjgxMTI2MTgsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.HVyP4cc_sD3dCb4EYXV5ydv8MIxYhmrFoGBGcsjOGcclyvqVTao2smkbZyKOxFXbQGuBzAMrMVrGRjpJ0Kl3Nyzbr3ZzSBaQK9ptLGVmlNoYMDlRGvCqJ9wPtK6Cosa_EpV3Anzr_3VYOjY0NC_4fkAOOnLLwAaBgAXqaUHvIf3qN_gkW6CTFpqe-a7TmiTqx6ttD0OvmM8g-epvvr10RFBTA5aIydKFOoh1XHNbQAwXAAUSx65G1AhAQnGsgOEDJdxWUGZ87mGKqkpj7D_YhsmtMSPnOVyc8CEqhqMi_vfSvQQDmJfecwZXmrZxTSjTA1yuNT87Ki_5p8LAyrvMjw&quot;,&quot;access_token&quot;:&quot;eyJraWQiOiJabDFHcTVsbUg2aHVmUzA2WEdIN3h2SFwvUldaRlwvVFFzS0NkY051VUVnSnM9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJkMGE2NTBkYS04ZTNkLTQ5MGMtYjBiNy04NjE1ZjBkNDhhNzciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2dm9lbGY3bXRybGRmcjIyM2dhaW11ZmkyZCIsImV2ZW50X2lkIjoiZTg1ZmVjZjMtM2FlYi00MzEwLWI0MDYtYTg0YWI1MjZlMTEyIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJvcGVuaWQiLCJhdXRoX3RpbWUiOjE2NTgzNTEzNTUsImV4cCI6MTY2ODExNjIxOCwiaWF0IjoxNjY4MTEyNjE4LCJqdGkiOiI4OTRhZDRhMC1iZjQ3LTRlMjUtOWJiNy0zZTc4ZWRjYWU3YTMiLCJ1c2VybmFtZSI6InBvc3RtYW5fc3RhZmZAdGVzdC5jb20ifQ.lR0xjW9bQOQpIfB_MbXK3p5ZeQkzXi1ZneEleY4faixdCEnO5DlV0NP3YIQJAJ76GCE6gniwGBmafKhYDFxXevvTfyZgV2jFPiKrRgbd5RKYPH3FAAxqT7ih_eaJ3zgWp1BgF8DFPG8EI7fLmC6PouIqYj7vFta9PNZG1LKA-XpUMkKvrrd4BV2n1iWzMY3pTnIYrFUIzcq0nZ5Q6LrnfQ4iD8renGBds8bth1w1D-1HPPNbhIgMaWdlbNt8UsZNiLE0h0JcCqNADDOXiiATJPtEaF2Cry65CtUTpcAQseDIXkHp6sTIltWrf3rC4M7JnF1gQQ4AtomkadLECWnXtg&quot;,&quot;expires_in&quot;:3600,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAccessToken = response.id_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.getCurrentShift.getCurrentLaniganShift</div>
+      </div>
+      <div class="time-cell passed">592</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">14:36:58.537 &lt;&lt; lock released, cached callSingle: classpath:supportTests/authentication/authAdmin.feature
+14:36:58.538 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/getCurrentShift/getCurrentLaniganShift.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;site&quot;: &#39;#(laniganId)&#39;, &quot;shiftDate&quot;: &#39;#(currentDate)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>request { query: &#39;#(payload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">585</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">14:36:58.553 request:
+2 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+2 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiN2w1TWRpOF9SbVpNU29jZE1DNnc1USIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjY4MTE2MjE4LCJpYXQiOjE2NjgxMTI2MTgsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.HVyP4cc_sD3dCb4EYXV5ydv8MIxYhmrFoGBGcsjOGcclyvqVTao2smkbZyKOxFXbQGuBzAMrMVrGRjpJ0Kl3Nyzbr3ZzSBaQK9ptLGVmlNoYMDlRGvCqJ9wPtK6Cosa_EpV3Anzr_3VYOjY0NC_4fkAOOnLLwAaBgAXqaUHvIf3qN_gkW6CTFpqe-a7TmiTqx6ttD0OvmM8g-epvvr10RFBTA5aIydKFOoh1XHNbQAwXAAUSx65G1AhAQnGsgOEDJdxWUGZ87mGKqkpj7D_YhsmtMSPnOVyc8CEqhqMi_vfSvQQDmJfecwZXmrZxTSjTA1yuNT87Ki_5p8LAyrvMjw
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 308
+2 &gt; Host: stageapi.minesight.nutrien.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$site: ID!\r\n\t\t$shiftDate: AWSDateTime!\r\n\t)\r\n\t{\r\n\t\tlistShifts(date: $shiftDate, siteId: $site) {\r\n\t\t\tid\r\n\t\t\tname\r\n\t\t\tstart\r\n\t\t}\r\n\t}\r\n&quot;,&quot;variables&quot;:{&quot;site&quot;:&quot;9d900b61-195c-433c-94ee-155a2570d653&quot;,&quot;shiftDate&quot;:&quot;2022-11-10T14:36:58.545-06:00&quot;}}
+
+14:36:59.134 response time in milliseconds: 581
+2 &lt; 200
+2 &lt; Content-Type: application/json;charset=UTF-8
+2 &lt; Content-Length: 118
+2 &lt; Connection: keep-alive
+2 &lt; Date: Thu, 10 Nov 2022 20:36:59 GMT
+2 &lt; x-amzn-RequestId: dce4e9fe-46da-40bc-9a65-a9f6ec1f128a
+2 &lt; x-amzn-appsync-TokensConsumed: 1
+2 &lt; Via: 1.1 c3c2330b03b76e8da8566ca59448eb18.cloudfront.net (CloudFront), 1.1 653091ac0195c12aece44bebed9fcff8.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: YVR50-C1
+2 &lt; X-Amz-Cf-Pop: YVR50-C1
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; X-Amz-Cf-Id: KhFwW58XYVtNGB7I5eCw2CdZb3lOEV9L7nJXgdmZqfO3IC6FMn_Zfg==
+{&quot;data&quot;:{&quot;listShifts&quot;:[{&quot;id&quot;:&quot;c4659ffe-f955-4d2c-a4b2-34e8b4d6731e&quot;,&quot;name&quot;:&quot;DS&quot;,&quot;start&quot;:&quot;2022-11-10T14:00:00.000Z&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def laniganShiftId = response.data.listShifts[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.getCurrentShift.getCurrentCoryShift</div>
+      </div>
+      <div class="time-cell passed">488</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">14:36:59.136 &lt;&lt; lock released, cached callSingle: classpath:supportTests/getCurrentShift/getCurrentLaniganShift.feature
+14:36:59.137 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/getCurrentShift/getCurrentCoryShift.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;site&quot;: &#39;#(coryId)&#39;, &quot;shiftDate&quot;: &#39;#(currentDate)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>request { query: &#39;#(payload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">484</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">14:36:59.151 request:
+3 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+3 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiN2w1TWRpOF9SbVpNU29jZE1DNnc1USIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjY4MTE2MjE4LCJpYXQiOjE2NjgxMTI2MTgsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.HVyP4cc_sD3dCb4EYXV5ydv8MIxYhmrFoGBGcsjOGcclyvqVTao2smkbZyKOxFXbQGuBzAMrMVrGRjpJ0Kl3Nyzbr3ZzSBaQK9ptLGVmlNoYMDlRGvCqJ9wPtK6Cosa_EpV3Anzr_3VYOjY0NC_4fkAOOnLLwAaBgAXqaUHvIf3qN_gkW6CTFpqe-a7TmiTqx6ttD0OvmM8g-epvvr10RFBTA5aIydKFOoh1XHNbQAwXAAUSx65G1AhAQnGsgOEDJdxWUGZ87mGKqkpj7D_YhsmtMSPnOVyc8CEqhqMi_vfSvQQDmJfecwZXmrZxTSjTA1yuNT87Ki_5p8LAyrvMjw
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 308
+3 &gt; Host: stageapi.minesight.nutrien.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$site: ID!\r\n\t\t$shiftDate: AWSDateTime!\r\n\t)\r\n\t{\r\n\t\tlistShifts(date: $shiftDate, siteId: $site) {\r\n\t\t\tid\r\n\t\t\tname\r\n\t\t\tstart\r\n\t\t}\r\n\t}\r\n&quot;,&quot;variables&quot;:{&quot;site&quot;:&quot;0fd37374-4add-b21e-fa35-20dab7f8e600&quot;,&quot;shiftDate&quot;:&quot;2022-11-10T14:36:59.143-06:00&quot;}}
+
+14:36:59.630 response time in milliseconds: 478
+3 &lt; 200
+3 &lt; Content-Type: application/json;charset=UTF-8
+3 &lt; Content-Length: 118
+3 &lt; Connection: keep-alive
+3 &lt; Date: Thu, 10 Nov 2022 20:36:59 GMT
+3 &lt; x-amzn-RequestId: f8f3a176-0498-46f4-9a4e-0d51aa8c0d20
+3 &lt; x-amzn-appsync-TokensConsumed: 1
+3 &lt; Via: 1.1 f83d0d4febf7c22c3236bd42fa6dcd96.cloudfront.net (CloudFront), 1.1 35342fd3ad9f4f9b82da032ca3afc472.cloudfront.net (CloudFront)
+3 &lt; X-Amz-Cf-Pop: YVR50-C1
+3 &lt; X-Amz-Cf-Pop: YVR50-C1
+3 &lt; X-Cache: Miss from cloudfront
+3 &lt; X-Amz-Cf-Id: WMyrIirIGtyAS8XnsYt8k3wxbqib1DZMEyL1y4GQyFTqH6o70rBB_g==
+{&quot;data&quot;:{&quot;listShifts&quot;:[{&quot;id&quot;:&quot;18d8e9ea-3a19-44c5-a933-9b560617b4a9&quot;,&quot;name&quot;:&quot;DS&quot;,&quot;start&quot;:&quot;2022-11-10T13:30:00.000Z&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def coryShiftId = response.data.listShifts[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.getCurrentShift.getCurrentVanscoyShift</div>
+      </div>
+      <div class="time-cell passed">398</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">14:36:59.633 &lt;&lt; lock released, cached callSingle: classpath:supportTests/getCurrentShift/getCurrentCoryShift.feature
+14:36:59.634 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/getCurrentShift/getCurrentVanscoyShift.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;site&quot;: &#39;#(vanscoyId)&#39;, &quot;shiftDate&quot;: &#39;#(currentDate)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>request { query: &#39;#(payload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">395</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">14:36:59.643 request:
+4 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+4 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiN2w1TWRpOF9SbVpNU29jZE1DNnc1USIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjY4MTE2MjE4LCJpYXQiOjE2NjgxMTI2MTgsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.HVyP4cc_sD3dCb4EYXV5ydv8MIxYhmrFoGBGcsjOGcclyvqVTao2smkbZyKOxFXbQGuBzAMrMVrGRjpJ0Kl3Nyzbr3ZzSBaQK9ptLGVmlNoYMDlRGvCqJ9wPtK6Cosa_EpV3Anzr_3VYOjY0NC_4fkAOOnLLwAaBgAXqaUHvIf3qN_gkW6CTFpqe-a7TmiTqx6ttD0OvmM8g-epvvr10RFBTA5aIydKFOoh1XHNbQAwXAAUSx65G1AhAQnGsgOEDJdxWUGZ87mGKqkpj7D_YhsmtMSPnOVyc8CEqhqMi_vfSvQQDmJfecwZXmrZxTSjTA1yuNT87Ki_5p8LAyrvMjw
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 308
+4 &gt; Host: stageapi.minesight.nutrien.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$site: ID!\r\n\t\t$shiftDate: AWSDateTime!\r\n\t)\r\n\t{\r\n\t\tlistShifts(date: $shiftDate, siteId: $site) {\r\n\t\t\tid\r\n\t\t\tname\r\n\t\t\tstart\r\n\t\t}\r\n\t}\r\n&quot;,&quot;variables&quot;:{&quot;site&quot;:&quot;6599161d-ab54-289a-0e17-c4c8551540ec&quot;,&quot;shiftDate&quot;:&quot;2022-11-10T14:36:59.639-06:00&quot;}}
+
+14:37:00.035 response time in milliseconds: 392
+4 &lt; 200
+4 &lt; Content-Type: application/json;charset=UTF-8
+4 &lt; Content-Length: 118
+4 &lt; Connection: keep-alive
+4 &lt; Date: Thu, 10 Nov 2022 20:36:59 GMT
+4 &lt; x-amzn-RequestId: 8642d332-16ba-454c-9bb4-3d1ff369d68b
+4 &lt; x-amzn-appsync-TokensConsumed: 1
+4 &lt; Via: 1.1 87136170926d082ce5ff23d5ad5be32c.cloudfront.net (CloudFront), 1.1 78c1c4eb451e4790ed630b0d5a576590.cloudfront.net (CloudFront)
+4 &lt; X-Amz-Cf-Pop: YVR50-C1
+4 &lt; X-Amz-Cf-Pop: YVR50-C1
+4 &lt; X-Cache: Miss from cloudfront
+4 &lt; X-Amz-Cf-Id: QnD7taAyLffgfNWFEMdsLuNeryxn8B4i_QQW0e_Wzf1mS0OJbckaog==
+{&quot;data&quot;:{&quot;listShifts&quot;:[{&quot;id&quot;:&quot;e37a0b06-0a2b-4020-99d6-4d44ba7ad882&quot;,&quot;name&quot;:&quot;DS&quot;,&quot;start&quot;:&quot;2022-11-10T14:00:00.000Z&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def vanscoyShiftId = response.data.listShifts[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def fName = fakerObj.name().firstName()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">14:37:00.040 src/test/java/REST-poc/reqres.feature:14
+And def fName = fakerObj.name().firstName()
+js failed:
+&gt;&gt;&gt;&gt;
+01: fakerObj.name().firstName()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;fakerObj&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/REST-poc/reqres.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def payload = &#39;{ &quot;name&quot;: &quot;#(fName)&quot;, &quot;job&quot;: &quot;leader&quot; }&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Basic assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 7000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.id == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>def id = $.id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># use id returned from above to do an patch</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;/users/{id}&#39;.replace(&#39;{id}&#39;, id)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def payload = &#39;{ &quot;name&quot;: &quot;#(fName)&quot;, &quot;job&quot;: &quot;patch&quot; }&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Basic assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 7000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match $.updatedAt == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># use id from initial post to get the updaed user details</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;/users/{id}&#39;.replace(&#39;{id}&#39;, id)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Basic assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 7000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:49]</span>
+                <span class="scenario-name">Create a new user, update the user, and verify the update - using json file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:49]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url restUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">14:37:00.045 karate.env system property was: stage 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref failed">51</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def fName = fakerObj.name().firstName()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51">14:37:00.052 src/test/java/REST-poc/reqres.feature:51
+And def fName = fakerObj.name().firstName()
+js failed:
+&gt;&gt;&gt;&gt;
+01: fakerObj.name().firstName()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;fakerObj&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/REST-poc/reqres.feature:51
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref skipped">52</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>def payload = read(&#39;reqres.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>replace payload.name = &quot;#(fName)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>replace payload.job = &quot;leader&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Basic assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref skipped">60</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 7000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref skipped">63</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match $.id == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>def id = $.id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># use id returned from above to do an patch</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref skipped">68</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def fName = fakerObj.name().firstName()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;/users/{id}&#39;.replace(&#39;{id}&#39;, id)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref skipped">70</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def payload = &#39;{ &quot;name&quot;: &quot;#(fName)&quot;, &quot;job&quot;: &quot;patch&quot; }&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref skipped">72</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Basic assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 7000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match $.updatedAt == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># use id from initial post to get the updaed user details</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref skipped">82</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>path &#39;/users/{id}&#39;.replace(&#39;{id}&#39;, id)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref skipped">83</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Basic assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 7000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

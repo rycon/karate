@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"Thread-5","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/rest\/reqres[1:13]","start":1671141261599,"end":1671141261647,"title":"src\/test\/java\/rest\/reqres[1:13] 15:54:21.599-15:54:21.647 Create a new user, update the user, and verify the update - using inline payload","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/rest\/reqres[2:50]","start":1671141261949,"end":1671141263266,"title":"src\/test\/java\/rest\/reqres[2:50] 15:54:21.949-15:54:23.266 Create a new user, update the user, and verify the update - using json file","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+query MyQuery ($equipmentId:ID!, $lastUpdateAt:Float!, $limit:Int!) {
+    assignmentEmployeeFeed (lastUpdateAt: $lastUpdateAt, borerEquipmentId: $equipmentId, limit: $limit){
+		id
+		assignmentId
+		siteEmployeeId
+		assignmentRoleId
+		comment
+		updatedAt
+		isDeleted
+		version
+	}
+}

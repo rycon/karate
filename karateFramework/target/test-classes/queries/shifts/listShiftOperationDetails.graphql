@@ -1,0 +1,12 @@
+query MyQuery(
+		$shiftId: ID!
+	)
+	{
+		listShiftOperationDetails(shiftId: $shiftId) {
+			createdOn
+			name
+			units
+			value
+		}
+	}
+

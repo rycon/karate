@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("78429a61-2c66-4185-bc11-47a390c9f507",{name:"ji9560880"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.shifts.listShiftOperationDetails</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-12-15 10:18:30 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:14]"><span>[1:14]</span> <span>Validate listShiftOperationDetails Schema</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:32]"><span>[2:32]</span> <span>Get and return current Vanscoy shiftId for Admin user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/shifts/listShiftOperationDetails.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Scenario - listShiftperationDetails</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:14]</span>
+                <span class="scenario-name">Validate listShiftOperationDetails Schema</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>678</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def listShiftPayload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">10:18:28.902 &lt;&lt; lock released, cached callSingle: classpath:supportTests/getCurrentShift/getCurrentVanscoyShift.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.authentication.authAdmin</div>
+      </div>
+      <div class="time-cell passed">680</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url authUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">10:18:26.660 karate.env system property was: stage 
+10:18:26.670 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/authentication/authAdmin.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field client_id = clientId // pulls client_id from the karate-config-{env}.js file</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field grant_type = &#39;refresh_token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>form field refresh_token = adminRefreshToken // pulls client_id from the karate-config-{env}.js file</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">674</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.12">10:18:26.732 request:
+1 &gt; POST https://minesight-stage.auth.us-east-2.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 1816
+1 &gt; Host: minesight-stage.auth.us-east-2.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 &gt; Accept-Encoding: gzip,deflate
+client_id=6voelf7mtrldfr223gaimufi2d&amp;grant_type=refresh_token&amp;refresh_token=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.CSlMEMBiS5av81BMKbXuG4Q6vh12C2nZ0lu2sa01mRfUGoj3Z-BOG--e67GySlzA3jB8LuTVQynxhjx1XM_g4blK9Viw3ToZCt63k5nolrGht5TRFfYpHAEFY4Hm2mmlRyp5vBssiqz2tL0jOlUigXJaEjJ1zOOlv7_hWwgevfvQPKgcsBOuYsNVZI7qXNJzlzxHdzTq5ucE8ls1WrLwUvk4LOEz73jPsLjZAXBBXQFvrJuraYOzGuKNAdyslABrIeNPOvZ1T1CsAY00-jvwwe2DRQVqqhqVPAmuYwS9EJmrvVNnxRiPyRAfeQN7C5GAYXPs6gjbMNtlU-XfmQbyMQ.27EWVawSams2i2cq.noVAh29evH2gc9dACs6aJBrrx6jm0S1DrXLFXXlJCEyZ_QKz1gd-S7GjMBBfPjwxemJsixJUclfxZtqx3iv9ISdTN3zKNSqlRKjy-4vDY8FGk22Bj4g80xdwYKmpyKOFDU31RC4XP3NrhYvYQaVyOaTUo6wGDOQx5zPP9cFrLeSj7yniv9cvveW4cw8bNiRlU0vj8cD4Bbw9B7rdrrNXKPFAEOdAsEg9JlW0HetQ1PsXoo0ZXmUky5qOMu4GGBdBmW0kV5j2vr5tL-viTztQZ6iWNrQkhykUAYqva9Xj5YhDxqRIc0LNdhN2nKeBotAU8Mml9XExNA9iXxhEAw3gE4NmJdS-qG1nTJKt7BCEkx3FzSMbNmNvPF0zpssaeDeZrL9xEW2gVxEKQL-6z-P1vI5zs91EKILezHe3Nv_AYZtaoXoRSkPGvc9E9CANI97cS_nc5if3l9uityvXI-3b6slt1vYu-49UMR-yk5w5C5_L1JqThhRjAdQDN48KVj8tn5NzvZikQKfQS3lGR71uwg6qrWrzuQNw3ST2CG5ZCwEqWkvw9bn7t6OmEWAT64NnglktVwiH-FkJqndXbgnmleoCvmS0aDTHodRB_KfmyMvNw1485bXQq4pSqlaIJeWuFBAN-Ad9_BG9tt7NLcqKoFq7TItjGCbMTxvreLzHufGCh_-g7mR76jNE3uqPFFgn2PzHyP-rNGjpAs3yXV8VEpLh1d52D1d3pM6KUuVabQaPR9UgUGH2DWzZaz83sBgjp59iliEBMk8loXw_Ihyeh1yV_-ZABTCAoqnK-mhy1kNkBssq-XYvz4DFoRbwhkD9WefTjvJyu6r6WVAbDhBmLmp__zmkpaCLjci2YTjGAzWyeHssW2m24YB2zPq5G4V6_2H0l6s04KCwETgFaKUAel_cHj1hU2uJu9lp2mecKB8E07EMsllARm5BjBogvFMj7TlXOTm2DJ-0VwTLp7g6pHHoZJdvUGa8QlZ-zkqaO34x-8JQ4VhY465N6YRI5D_PBrdnFPKSSDKLo1ouGjTjE8_ed0f7AAEOduiSZWV89MP_xxIjiXqGJVLkUXwenuLYg5x58Ax9U4D43Ma-UvxqCwChPC6O_Wl-pvFgMb-Rw_5BLJ_hDYRLk7sU7Bf7t_8vLlZrMu9Fqi9KiwM86g2ov3tuONoXvKzmAg-F1PfOIDP6U4OjA70f7hiGmkE0RikP5EtxWablPvGZxZS4JP2z-dBUZqfXy1PIPNzVkxsMpJlmAnt-9cMHoQLa3ftjandeQIu3P325zME1WQ.j_u-LDyWKDCl3Q3HQaiqLw
+
+10:18:27.359 response time in milliseconds: 626
+1 &lt; 200
+1 &lt; Date: Thu, 15 Dec 2022 16:18:27 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Server: Server
+1 &lt; Expires: 0
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; x-amz-cognito-request-id: 7b5fc68b-ea2c-4976-b9c9-096b9a30f958
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; Set-Cookie: XSRF-TOKEN=60a2bd99-61b6-4657-9931-9662726e01ba; Domain=minesight-stage.auth.us-east-2.amazoncognito.com; Secure
+{&quot;id_token&quot;:&quot;eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSFdDakx4UW9yOU9QeU95UXpjVDJ5dyIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjcxMTI0NzA3LCJpYXQiOjE2NzExMjExMDcsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.K4UV0EXYC5TMZ8PH8odzadk93r-CKyv0hTtX8tsnxmHq7u2Y62gcngtkNKW99xDoyF73CaCtytryns8pkAMpaCZjZhnc0jqVaMCTI6DRXXx1nDoK--Pyo8AHkKXTG18cLcBstQMURaDev3gAyognAH-2M2jDr1KSkLNpjTX-N9Ti3qQ_d_fV-ITppYBSGtcAJchjHyA25PdRaITLX18kR86-YiollLOJ_mjt4WmDk3RSXlC_NXFgQ0QbLMWB6_V823hb4q4dsGEf0Nmf051DizpD7lyNPliK_K25t8FDObs2AXc4Mbbc3e0yYmhgSr5h1kPBps1BhXEQWr9bDxPbqw&quot;,&quot;access_token&quot;:&quot;eyJraWQiOiJabDFHcTVsbUg2aHVmUzA2WEdIN3h2SFwvUldaRlwvVFFzS0NkY051VUVnSnM9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJkMGE2NTBkYS04ZTNkLTQ5MGMtYjBiNy04NjE1ZjBkNDhhNzciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI2dm9lbGY3bXRybGRmcjIyM2dhaW11ZmkyZCIsImV2ZW50X2lkIjoiZTg1ZmVjZjMtM2FlYi00MzEwLWI0MDYtYTg0YWI1MjZlMTEyIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJvcGVuaWQiLCJhdXRoX3RpbWUiOjE2NTgzNTEzNTUsImV4cCI6MTY3MTEyNDcwNywiaWF0IjoxNjcxMTIxMTA3LCJqdGkiOiI5ZGIxODJiMy04M2FjLTRmNWItYTdiMC04Nzg4MDAyNTA0YmQiLCJ1c2VybmFtZSI6InBvc3RtYW5fc3RhZmZAdGVzdC5jb20ifQ.AbLczSqZoQRT8sw2MyWjQ4LiibT_rvOf7uCEjBC3SNzZb4BjEvhS5yVwqs5yRBH6Oz4xZStqDdgHJmDcEp_HREJ-CLQj_m19pWbdlo47Dk4ElcBFCAA1BAGJ8JGjyMta7liVa69NSHDbg_8mpYUev7MFwMELRj2NrltuHCdiQXwI_01vCS_mLOmRMCT3jEpe0fOiTkZ4SKFnAaDkQh9BSkeVv5xVex0MG59ujAhUuWrJE-lq4slJ2T9Jql5_a8IA92och8AxZ1dtlYKGk_drvvEtetwp-4NEUpOTqrpGxeQ0vejexIqcfk8_xv27-8gMB0q-5QO2gD1NHtRp1o2wtQ&quot;,&quot;expires_in&quot;:3600,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAccessToken = response.id_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.getCurrentShift.getCurrentLaniganShift</div>
+      </div>
+      <div class="time-cell passed">503</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">10:18:27.366 &lt;&lt; lock released, cached callSingle: classpath:supportTests/authentication/authAdmin.feature
+10:18:27.367 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/getCurrentShift/getCurrentLaniganShift.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;site&quot;: &#39;#(laniganId)&#39;, &quot;shiftDate&quot;: &#39;#(currentDate)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>request { query: &#39;#(payload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">496</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">10:18:27.393 request:
+2 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+2 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSFdDakx4UW9yOU9QeU95UXpjVDJ5dyIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjcxMTI0NzA3LCJpYXQiOjE2NzExMjExMDcsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.K4UV0EXYC5TMZ8PH8odzadk93r-CKyv0hTtX8tsnxmHq7u2Y62gcngtkNKW99xDoyF73CaCtytryns8pkAMpaCZjZhnc0jqVaMCTI6DRXXx1nDoK--Pyo8AHkKXTG18cLcBstQMURaDev3gAyognAH-2M2jDr1KSkLNpjTX-N9Ti3qQ_d_fV-ITppYBSGtcAJchjHyA25PdRaITLX18kR86-YiollLOJ_mjt4WmDk3RSXlC_NXFgQ0QbLMWB6_V823hb4q4dsGEf0Nmf051DizpD7lyNPliK_K25t8FDObs2AXc4Mbbc3e0yYmhgSr5h1kPBps1BhXEQWr9bDxPbqw
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 308
+2 &gt; Host: stageapi.minesight.nutrien.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$site: ID!\r\n\t\t$shiftDate: AWSDateTime!\r\n\t)\r\n\t{\r\n\t\tlistShifts(date: $shiftDate, siteId: $site) {\r\n\t\t\tid\r\n\t\t\tname\r\n\t\t\tstart\r\n\t\t}\r\n\t}\r\n&quot;,&quot;variables&quot;:{&quot;site&quot;:&quot;9d900b61-195c-433c-94ee-155a2570d653&quot;,&quot;shiftDate&quot;:&quot;2022-12-15T10:18:27.384-06:00&quot;}}
+
+10:18:27.883 response time in milliseconds: 489
+2 &lt; 200
+2 &lt; Content-Type: application/json;charset=UTF-8
+2 &lt; Content-Length: 118
+2 &lt; Connection: keep-alive
+2 &lt; Date: Thu, 15 Dec 2022 16:18:27 GMT
+2 &lt; x-amzn-RequestId: e4e06f63-eaa0-4c32-924d-a69f2fc6760e
+2 &lt; x-amzn-appsync-TokensConsumed: 6
+2 &lt; Via: 1.1 f15d0009ab21c8be62f4ef83e2729a2c.cloudfront.net (CloudFront), 1.1 c99ac05a593abfb051d4866fe2e43d16.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: MSP50-C2
+2 &lt; X-Amz-Cf-Pop: MSP50-P2
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; X-Amz-Cf-Id: MDNKPe2dkojrTxuZPol5cV4jCiue-VnbNB86-l05GNn0ir5MhmHBLA==
+{&quot;data&quot;:{&quot;listShifts&quot;:[{&quot;id&quot;:&quot;b972fdc2-6054-47d1-b6ba-13b6ba12ae3a&quot;,&quot;name&quot;:&quot;DS&quot;,&quot;start&quot;:&quot;2022-12-15T14:00:00.000Z&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def laniganShiftId = response.data.listShifts[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.getCurrentShift.getCurrentCoryShift</div>
+      </div>
+      <div class="time-cell passed">547</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">10:18:27.886 &lt;&lt; lock released, cached callSingle: classpath:supportTests/getCurrentShift/getCurrentLaniganShift.feature
+10:18:27.887 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/getCurrentShift/getCurrentCoryShift.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;site&quot;: &#39;#(coryId)&#39;, &quot;shiftDate&quot;: &#39;#(currentDate)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>request { query: &#39;#(payload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">544</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">10:18:27.907 request:
+3 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+3 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSFdDakx4UW9yOU9QeU95UXpjVDJ5dyIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjcxMTI0NzA3LCJpYXQiOjE2NzExMjExMDcsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.K4UV0EXYC5TMZ8PH8odzadk93r-CKyv0hTtX8tsnxmHq7u2Y62gcngtkNKW99xDoyF73CaCtytryns8pkAMpaCZjZhnc0jqVaMCTI6DRXXx1nDoK--Pyo8AHkKXTG18cLcBstQMURaDev3gAyognAH-2M2jDr1KSkLNpjTX-N9Ti3qQ_d_fV-ITppYBSGtcAJchjHyA25PdRaITLX18kR86-YiollLOJ_mjt4WmDk3RSXlC_NXFgQ0QbLMWB6_V823hb4q4dsGEf0Nmf051DizpD7lyNPliK_K25t8FDObs2AXc4Mbbc3e0yYmhgSr5h1kPBps1BhXEQWr9bDxPbqw
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 308
+3 &gt; Host: stageapi.minesight.nutrien.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$site: ID!\r\n\t\t$shiftDate: AWSDateTime!\r\n\t)\r\n\t{\r\n\t\tlistShifts(date: $shiftDate, siteId: $site) {\r\n\t\t\tid\r\n\t\t\tname\r\n\t\t\tstart\r\n\t\t}\r\n\t}\r\n&quot;,&quot;variables&quot;:{&quot;site&quot;:&quot;0fd37374-4add-b21e-fa35-20dab7f8e600&quot;,&quot;shiftDate&quot;:&quot;2022-12-15T10:18:27.901-06:00&quot;}}
+
+10:18:28.445 response time in milliseconds: 538
+3 &lt; 200
+3 &lt; Content-Type: application/json;charset=UTF-8
+3 &lt; Content-Length: 118
+3 &lt; Connection: keep-alive
+3 &lt; Date: Thu, 15 Dec 2022 16:18:28 GMT
+3 &lt; x-amzn-RequestId: aa6fbcb4-d2db-4a77-b8b6-e906a3d3620f
+3 &lt; x-amzn-appsync-TokensConsumed: 6
+3 &lt; Via: 1.1 f4eeb3a2723f4b344bc592899b150c50.cloudfront.net (CloudFront), 1.1 e70c2642a73fce39964e5e96b00768ba.cloudfront.net (CloudFront)
+3 &lt; X-Amz-Cf-Pop: MSP50-C2
+3 &lt; X-Amz-Cf-Pop: MSP50-P2
+3 &lt; X-Cache: Miss from cloudfront
+3 &lt; X-Amz-Cf-Id: KqdhpkHby7uyYNR33Gf2SR2PIy5p8ZOl2lXaBTNY-extZq33YosOlg==
+{&quot;data&quot;:{&quot;listShifts&quot;:[{&quot;id&quot;:&quot;31f8026f-4f49-4123-8466-b9cde537ef86&quot;,&quot;name&quot;:&quot;DS&quot;,&quot;start&quot;:&quot;2022-12-15T13:30:00.000Z&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def coryShiftId = response.data.listShifts[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">supportTests.getCurrentShift.getCurrentVanscoyShift</div>
+      </div>
+      <div class="time-cell passed">442</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.4">10:18:28.448 &lt;&lt; lock released, cached callSingle: classpath:supportTests/getCurrentShift/getCurrentCoryShift.feature
+10:18:28.449 &gt;&gt; lock acquired, begin callSingle: classpath:supportTests/getCurrentShift/getCurrentVanscoyShift.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;site&quot;: &#39;#(vanscoyId)&#39;, &quot;shiftDate&quot;: &#39;#(currentDate)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>request { query: &#39;#(payload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">437</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.13">10:18:28.466 request:
+4 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+4 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSFdDakx4UW9yOU9QeU95UXpjVDJ5dyIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjcxMTI0NzA3LCJpYXQiOjE2NzExMjExMDcsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.K4UV0EXYC5TMZ8PH8odzadk93r-CKyv0hTtX8tsnxmHq7u2Y62gcngtkNKW99xDoyF73CaCtytryns8pkAMpaCZjZhnc0jqVaMCTI6DRXXx1nDoK--Pyo8AHkKXTG18cLcBstQMURaDev3gAyognAH-2M2jDr1KSkLNpjTX-N9Ti3qQ_d_fV-ITppYBSGtcAJchjHyA25PdRaITLX18kR86-YiollLOJ_mjt4WmDk3RSXlC_NXFgQ0QbLMWB6_V823hb4q4dsGEf0Nmf051DizpD7lyNPliK_K25t8FDObs2AXc4Mbbc3e0yYmhgSr5h1kPBps1BhXEQWr9bDxPbqw
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 308
+4 &gt; Host: stageapi.minesight.nutrien.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$site: ID!\r\n\t\t$shiftDate: AWSDateTime!\r\n\t)\r\n\t{\r\n\t\tlistShifts(date: $shiftDate, siteId: $site) {\r\n\t\t\tid\r\n\t\t\tname\r\n\t\t\tstart\r\n\t\t}\r\n\t}\r\n&quot;,&quot;variables&quot;:{&quot;site&quot;:&quot;6599161d-ab54-289a-0e17-c4c8551540ec&quot;,&quot;shiftDate&quot;:&quot;2022-12-15T10:18:28.460-06:00&quot;}}
+
+10:18:28.899 response time in milliseconds: 433
+4 &lt; 200
+4 &lt; Content-Type: application/json;charset=UTF-8
+4 &lt; Content-Length: 118
+4 &lt; Connection: keep-alive
+4 &lt; Date: Thu, 15 Dec 2022 16:18:28 GMT
+4 &lt; x-amzn-RequestId: 30268eae-0d46-4e9f-ba95-6d982a8d3905
+4 &lt; x-amzn-appsync-TokensConsumed: 5
+4 &lt; Via: 1.1 0a7682e52ec0d34a2385a0d09b365afa.cloudfront.net (CloudFront), 1.1 077041ddf56b8eb9505a28cba1464114.cloudfront.net (CloudFront)
+4 &lt; X-Amz-Cf-Pop: MSP50-P1
+4 &lt; X-Amz-Cf-Pop: MSP50-P2
+4 &lt; X-Cache: Miss from cloudfront
+4 &lt; X-Amz-Cf-Id: wC94pDz3N7fpRuHK7JebOtDaVBp5d7egker_LzbgNIbl_I_6XGwY3A==
+{&quot;data&quot;:{&quot;listShifts&quot;:[{&quot;id&quot;:&quot;61584f8a-1057-49ed-bb99-a2c3e54cacdc&quot;,&quot;name&quot;:&quot;DS&quot;,&quot;start&quot;:&quot;2022-12-15T14:00:00.000Z&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def vanscoyShiftId = response.data.listShifts[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def listShiftOperationDetailsPayload = read(&#39;classpath:queries/shifts/listShiftOperationDetails.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;shiftId&quot;: &#39;#(currentLaniganShift)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(listShiftOperationDetailsPayload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">663</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">10:18:28.914 request:
+5 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+5 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSFdDakx4UW9yOU9QeU95UXpjVDJ5dyIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjcxMTI0NzA3LCJpYXQiOjE2NzExMjExMDcsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.K4UV0EXYC5TMZ8PH8odzadk93r-CKyv0hTtX8tsnxmHq7u2Y62gcngtkNKW99xDoyF73CaCtytryns8pkAMpaCZjZhnc0jqVaMCTI6DRXXx1nDoK--Pyo8AHkKXTG18cLcBstQMURaDev3gAyognAH-2M2jDr1KSkLNpjTX-N9Ti3qQ_d_fV-ITppYBSGtcAJchjHyA25PdRaITLX18kR86-YiollLOJ_mjt4WmDk3RSXlC_NXFgQ0QbLMWB6_V823hb4q4dsGEf0Nmf051DizpD7lyNPliK_K25t8FDObs2AXc4Mbbc3e0yYmhgSr5h1kPBps1BhXEQWr9bDxPbqw
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 265
+5 &gt; Host: stageapi.minesight.nutrien.com
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$shiftId: ID!\r\n\t)\r\n\t{\r\n\t\tlistShiftOperationDetails(shiftId: $shiftId) {\r\n\t\t\tcreatedOn\r\n\t\t\tname\r\n\t\t\tunits\r\n\t\t\tvalue\r\n\t\t}\r\n\t}\r\n\r\n&quot;,&quot;variables&quot;:{&quot;shiftId&quot;:&quot;b972fdc2-6054-47d1-b6ba-13b6ba12ae3a&quot;}}
+
+10:18:29.571 response time in milliseconds: 656
+5 &lt; 200
+5 &lt; Content-Type: application/json;charset=UTF-8
+5 &lt; Content-Length: 956
+5 &lt; Connection: keep-alive
+5 &lt; Date: Thu, 15 Dec 2022 16:18:29 GMT
+5 &lt; x-amzn-RequestId: ade4197c-4856-4818-8889-54ed35d811af
+5 &lt; x-amzn-appsync-TokensConsumed: 1
+5 &lt; Via: 1.1 756a8276db5ec7b4a24ed26f87e76b3c.cloudfront.net (CloudFront), 1.1 7cc224be3664680df186a12039cdc424.cloudfront.net (CloudFront)
+5 &lt; X-Amz-Cf-Pop: MSP50-P1
+5 &lt; X-Amz-Cf-Pop: MSP50-P2
+5 &lt; X-Cache: Miss from cloudfront
+5 &lt; X-Amz-Cf-Id: bvb48dXgK3KZ-0z037rxL1ZAvZOSYB3BwpxCwTaPr14oOTfTtWY0cQ==
+{&quot;data&quot;:{&quot;listShiftOperationDetails&quot;:[{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Block C Bins&quot;,&quot;units&quot;:&quot;t&quot;,&quot;value&quot;:2165.0},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Block B Bins&quot;,&quot;units&quot;:&quot;t&quot;,&quot;value&quot;:732.0},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Blending Bin&quot;,&quot;units&quot;:&quot;t&quot;,&quot;value&quot;:6449.0791015625},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Mill feed rate: Phase II&quot;,&quot;units&quot;:&quot;t/hr&quot;,&quot;value&quot;:549.7930297851562},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Mill feed rate: Phase I&quot;,&quot;units&quot;:&quot;t/hr&quot;,&quot;value&quot;:449.6609802246094},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Tonnes Hoisted&quot;,&quot;units&quot;:&quot;t/hr&quot;,&quot;value&quot;:2565.77294921875},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Mill feed rate: Total&quot;,&quot;units&quot;:&quot;t/hr&quot;,&quot;value&quot;:999.796630859375},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Skips - Hoist 2&quot;,&quot;units&quot;:&quot;skips&quot;,&quot;value&quot;:53.0},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Skips - Hoist 1&quot;,&quot;units&quot;:&quot;skips&quot;,&quot;value&quot;:41.0}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Set schema validation - example where endoint returns multiple objects in the respnse array</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def schemaValidation = { &quot;createdOn&quot;: &#39;#(timeStampRegex)&#39;, &quot;name&quot;: &#39;#string&#39;, &quot;units&quot;: &#39;#string&#39;, &quot;value&quot;: &#39;##number&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># base assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.errors == &#39;#notpresent&#39; //error object not returned</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; baseResponseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Assert response object matches schema .json file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data.listShiftOperationDetails[*] contains schemaValidation</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:32]</span>
+                <span class="scenario-name">Get and return current Vanscoy shiftId for Admin user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>624</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def listShiftPayload = read(&#39;classpath:queries/shifts/listShifts.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">10:18:29.590 karate.env system property was: stage 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def listShiftOperationDetailsPayload = read(&#39;classpath:queries/shifts/listShiftOperationDetails.graphql&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = commonUtils.currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def variables = { &quot;shiftId&quot;: &#39;#(currentVanscoyShift)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(listShiftOperationDetailsPayload)&#39;, variables: &#39;#(variables)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">613</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">10:18:29.602 request:
+1 &gt; POST https://stageapi.minesight.nutrien.com/graphql
+1 &gt; Authorization: eyJraWQiOiJETUc3UGNhRUZWR3ZQXC82R0JFR0FlemNoZGpWSkxEeHh4WDB4cEtpTG5zbz0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSFdDakx4UW9yOU9QeU95UXpjVDJ5dyIsInN1YiI6ImQwYTY1MGRhLThlM2QtNDkwYy1iMGI3LTg2MTVmMGQ0OGE3NyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9QYnNXMUpoc2MiLCJjb2duaXRvOnVzZXJuYW1lIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSIsImF1ZCI6IjZ2b2VsZjdtdHJsZGZyMjIzZ2FpbXVmaTJkIiwiZXZlbnRfaWQiOiJlODVmZWNmMy0zYWViLTQzMTAtYjQwNi1hODRhYjUyNmUxMTIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY1ODM1MTM1NSwiZXhwIjoxNjcxMTI0NzA3LCJpYXQiOjE2NzExMjExMDcsImVtYWlsIjoicG9zdG1hbl9zdGFmZkB0ZXN0LmNvbSJ9.K4UV0EXYC5TMZ8PH8odzadk93r-CKyv0hTtX8tsnxmHq7u2Y62gcngtkNKW99xDoyF73CaCtytryns8pkAMpaCZjZhnc0jqVaMCTI6DRXXx1nDoK--Pyo8AHkKXTG18cLcBstQMURaDev3gAyognAH-2M2jDr1KSkLNpjTX-N9Ti3qQ_d_fV-ITppYBSGtcAJchjHyA25PdRaITLX18kR86-YiollLOJ_mjt4WmDk3RSXlC_NXFgQ0QbLMWB6_V823hb4q4dsGEf0Nmf051DizpD7lyNPliK_K25t8FDObs2AXc4Mbbc3e0yYmhgSr5h1kPBps1BhXEQWr9bDxPbqw
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 265
+1 &gt; Host: stageapi.minesight.nutrien.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query MyQuery(\r\n\t\t$shiftId: ID!\r\n\t)\r\n\t{\r\n\t\tlistShiftOperationDetails(shiftId: $shiftId) {\r\n\t\t\tcreatedOn\r\n\t\t\tname\r\n\t\t\tunits\r\n\t\t\tvalue\r\n\t\t}\r\n\t}\r\n\r\n&quot;,&quot;variables&quot;:{&quot;shiftId&quot;:&quot;61584f8a-1057-49ed-bb99-a2c3e54cacdc&quot;}}
+
+10:18:30.209 response time in milliseconds: 607
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Content-Length: 413
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 15 Dec 2022 16:18:30 GMT
+1 &lt; x-amzn-RequestId: 668e044f-7c46-4c83-add2-85aff381835f
+1 &lt; x-amzn-appsync-TokensConsumed: 8
+1 &lt; Via: 1.1 0a7682e52ec0d34a2385a0d09b365afa.cloudfront.net (CloudFront), 1.1 b46eb018a497b81ccf0e0f2bac7d3eb2.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: MSP50-P1
+1 &lt; X-Amz-Cf-Pop: MSP50-P2
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; X-Amz-Cf-Id: QLmQAvddvRJ4hOXp1DMA0QAe4vWXE0jWi6lqmk22CKa_t1MTc4wD1w==
+{&quot;data&quot;:{&quot;listShiftOperationDetails&quot;:[{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Tonnes skipped&quot;,&quot;units&quot;:&quot;t&quot;,&quot;value&quot;:0.0},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Skips&quot;,&quot;units&quot;:&quot;skips&quot;,&quot;value&quot;:0.0},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Mill feed rate&quot;,&quot;units&quot;:&quot;t/hr&quot;,&quot;value&quot;:-0.09390924125909805},{&quot;createdOn&quot;:&quot;2022-12-15T16:10:33.823Z&quot;,&quot;name&quot;:&quot;Skipping rate&quot;,&quot;units&quot;:&quot;t/hr&quot;,&quot;value&quot;:0.0}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># base assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.errors == &#39;#notpresent&#39; //error object not returned</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; baseResponseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Test specific assertions</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data.listShiftOperationDetails != null // response is not empty</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data.listShiftOperationDetails[0].units == &#39;t&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data.listShiftOperationDetails[3].units == &#39;t/hr&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data.listShiftOperationDetails !contains &quot;Tonnes skipped&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

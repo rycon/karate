@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: rest.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.108 s <<< FAILURE! - in rest.TestRunner
+restTests[1][1]  Time elapsed: 3.958 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: restUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "restUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:rest/reqres.feature:9
+
+restTests[1][2]  Time elapsed: 3.096 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: restUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "restUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:rest/reqres.feature:9
+
